@@ -19,13 +19,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
-import { TransactionProvider } from "./context/TransactionContext";
 import "./index.css";
+import { TransactionsProvider } from "./context/TransactionContext";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <TransactionProvider>
+  <TransactionsProvider>
     <App />
-  </TransactionProvider>
+  </TransactionsProvider>
 );
